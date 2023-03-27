@@ -17,7 +17,7 @@ class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         out_nums = []
         for i,j in enumerate(nums) :
-            if i == 1:
+            if i == 0
                 out_nums.append(j)
             else:
                 out_nums.append(out_nums[i-1] + j)
