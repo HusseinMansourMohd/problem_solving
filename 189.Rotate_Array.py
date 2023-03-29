@@ -8,10 +8,10 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         n = len(nums)
-        k = k % n
-        self.reverse(nums, 0, n-1)
-        self.reverse(nums, 0, k-1)
-        self.reverse(nums, k, n-1)
+        k = k % n #module this for rotation
+        self.reverse(nums, 0, n-1)#revese the whole array [6,5,4,3,2,1]
+        self.reverse(nums, 0, k-1)#rotat the first k [4,5,6,3,2,1]
+        self.reverse(nums, k, n-1)#rotate the remaining [4,5,6,1,2,3]
     def reverse(self,nums, start, end):
         while start < end:
             nums[start], nums[end] = nums[end], nums[start]
