@@ -11,10 +11,9 @@ class Solution:
         current = root
         output = []
 
-        while current and current.children:
-            if current == 'null':
-                current= current.next
-            else:
+        while current:
+            if current not in output:
                 output.append(current)
-                current = current.next
+            if current.children:
+                output.append(current.children)
         return output
