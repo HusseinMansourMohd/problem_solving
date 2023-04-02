@@ -31,4 +31,5 @@ class Solution:
             right -= 1
 
     # If no solution is found, return an empty array
-    return []    
+    return []   
+#The time complexity of this algorithm is O(n), 
