@@ -15,4 +15,13 @@ class Solution:
             window_counter[s2[i]] += 1
 
 
+            if i >= s1_len:
+                if window_counter[s2[i - s1_len]] == 1:
+                    del  window_counter[s2[i - s1_len]]
+                else:
+                    window_counter[s2[i - s1_len]] -= 1
+                
+            if window_counter == s1_counter:
+                return True
             
+        return False
