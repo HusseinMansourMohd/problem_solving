@@ -10,3 +10,9 @@ class Solution:
             return False
         s1_counter = Counter(s1)
         window_counter = Counter()
+
+        for i in range(s2_len):
+            window_counter[s2[i]] += 1
+
+
+            
