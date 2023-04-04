@@ -8,3 +8,5 @@ class Solution:
         
         if s1_len > s2_len:
             return False
+        s1_counter = Counter(s1)
+        window_counter = Counter()
