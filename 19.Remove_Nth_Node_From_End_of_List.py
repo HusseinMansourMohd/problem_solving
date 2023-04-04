@@ -13,7 +13,7 @@ class Solution:
             first = first.next
         
         while first:
-            first = first.next
+            first = first.next #n+1 steps above this
             second = second.next
             
         second.next = second.next.next
