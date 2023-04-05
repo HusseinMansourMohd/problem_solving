@@ -55,13 +55,13 @@ class Solution:
             dfs(grid, row + 1 , col)
             dfs(grid, row , col - 1)
             dfs(grid, row , col + 1)
-            
+
         count = 0
-        for i in range(rows):
+        for i in range(row):
             for j in range(col):
                 if grid[i][j] == '1':
                     count += 1
-                    dfs(gird,i,j)
+                    dfs(grid,i,j)
         return count
 
         
