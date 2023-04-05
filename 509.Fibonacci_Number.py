@@ -28,6 +28,7 @@
 # 0 <= n <= 30
 
 class Solution:
+    ## Dynamic programming
     def fib(self, n: int) -> int:
         if n == 0:
             return 0
@@ -38,5 +39,18 @@ class Solution:
         fib_nums[0] = 0
         fib_nums[1] = 1
 
-        for 
+        for i in range(2,n+1):
+            fib_nums[i] = fib_nums[i-1] + fib_nums[i-2]
+
+        return fib_nums[n]
+    
+    ## recurtion
+    def fib(self, n:int) -> int:
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        else :
+            return fib(n-1) + fib(n-2)
+        
 
