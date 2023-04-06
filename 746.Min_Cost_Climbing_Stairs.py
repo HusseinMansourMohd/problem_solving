@@ -28,10 +28,9 @@ class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         df = [0]*(len(cost)+1)
         df[0] = 0
-        df[1] = cost[0]  #pay 10
-        df[2] = cost[1] # pay 15
+        df[1] = 0  #pay 10
 
-        for i in range(3,len(cost)+1):
-            df[i] = min(df[i-1] + cost[i-1],df[i-2]) 
+        for i in range(2,len(cost)+1):
+            df[i] = min(df[i-1] + cost[i-1],df[i-2] + cost[i-2]) 
 
         return df[len(cost)]
