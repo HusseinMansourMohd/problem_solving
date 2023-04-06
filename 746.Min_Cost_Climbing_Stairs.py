@@ -25,10 +25,13 @@
 # 2. 1 step + 2 steps
 # 3. 2 steps + 1 step
 class Solution:
-    def climbStairs(self, n: int) -> int:
-        dp = [0] * (n+1)
-        dp[0] = 1
-        dp[1] = 1
-        for i in range(2,n+1):
-            dp[i] = dp[i-1] + dp[i-2]
-        return dp[n]
+    def minCostClimbingStairs(self, cost: List[int]) -> int:
+        df = [0]*(len(cost)+1)
+        df[0] = 0
+        df[1] = cost[0]  #pay 10
+        df[2] = cost[1] # pay 15
+
+        for i in range(3,len(cost)+1):
+            df[i] = min(df[i-1] + cost[i-1],df[i-2]) 
+
+        return df[len(cost)]
