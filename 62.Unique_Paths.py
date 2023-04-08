@@ -29,7 +29,7 @@
 # Constraints:
 
 # 1 <= m, n <= 100
-
+#
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         # Create a 2D DP array with dimensions m x n, initialized to 1
