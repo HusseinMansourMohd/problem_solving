@@ -4,7 +4,7 @@ def floodFill(image, sr, sc, newColor):
 
     if start_color == newColor:
         return image
-
+    ###
     def dfs(row, col):
         if row < 0 or row >= rows or col < 0 or col >= cols or image[row][col] != start_color:
             return
