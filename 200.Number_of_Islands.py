@@ -40,6 +40,7 @@
 # After traversing the entire grid, return the count variable as the number of islands.
 
 class Solution:
+    ###
     def numIslands(self, grid: List[List[str]]) -> int:
         row = len(grid)
         col = len(grid[0])
