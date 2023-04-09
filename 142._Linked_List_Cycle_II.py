@@ -22,7 +22,7 @@ class Solution:
             # If the pointers meet at a node in the cycle, break out of the loop
             if slow == fast:
                 break
-        
+        ####
         # If the fast pointer reached the end of the linked list, there is no cycle
         if not fast or not fast.next:
             return None
