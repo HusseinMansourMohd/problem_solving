@@ -13,7 +13,7 @@ class Solution:
         # Initialize the slow and fast pointers
         slow = head
         fast = head
-        
+        ####
         # Move the slow pointer one step at a time and the fast pointer two steps at a time
         while fast and fast.next:
             slow = slow.next
