@@ -9,7 +9,7 @@ class Solution:
         # Check if the linked list is empty or has only one node
         if not head or not head.next:
             return None
-        
+        #####
         # Initialize the slow and fast pointers
         slow = head
         fast = head
