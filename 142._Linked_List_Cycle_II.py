@@ -26,7 +26,7 @@ class Solution:
         # If the fast pointer reached the end of the linked list, there is no cycle
         if not fast or not fast.next:
             return None
-        
+        ####
         # Reset the slow pointer to the head of the linked list
         slow = head
         
