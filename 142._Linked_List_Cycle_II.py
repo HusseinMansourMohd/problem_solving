@@ -29,7 +29,7 @@ class Solution:
         ####
         # Reset the slow pointer to the head of the linked list
         slow = head
-        
+        #####
         # Move both pointers one step at a time until they meet again
         while slow != fast:
             slow = slow.next
