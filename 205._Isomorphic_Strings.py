@@ -11,4 +11,4 @@ class Solution:
             else:
                 if mapping[s[i]] != t[i]:
                     return False
-        return True
+        return True###
