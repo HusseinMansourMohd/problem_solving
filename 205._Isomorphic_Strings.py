@@ -3,6 +3,7 @@ class Solution:
         if len(s) != len(t):
             return False
         mapping = {}
+        ####
         for i in range(len(s)):
             if s[i] not in mapping:
                 if t[i] in mapping.values():
