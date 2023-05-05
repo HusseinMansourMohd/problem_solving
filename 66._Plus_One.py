@@ -8,7 +8,9 @@ class Solution:
             if digits[i] < 10:
                 carry = 0
             else:
+                ###
                 digits[i] = 0
+                ###
         if carry == 1:
             digits.insert(0,1)#0 index , 1 is what we insert
         return digits
