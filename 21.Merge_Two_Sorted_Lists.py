@@ -7,6 +7,7 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode] ,list2: Optional[ListNode]) -> Optional[ListNode]:
          # Create a dummy node and a current node pointer
         dummy = ListNode()
+        #####
         current = dummy
 
         # Iterate through both lists until either list is empty
