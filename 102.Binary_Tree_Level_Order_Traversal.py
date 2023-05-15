@@ -19,7 +19,7 @@ class Solution:
             node = stack.pop()
             result.append(node.val)
             
-            # Add children from right to left so they are processed in the correct order
+            # Add children from right to  left so they are processed in the correct order
             for child in reversed(node.children):
                 stack.append(child)
         
