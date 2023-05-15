@@ -10,7 +10,7 @@ Class Solution:
             for i in range(start, n+1):
                 comb.append(i) #append the first number 
 
-                backtrack(i+1, comb, k-1)# backtrak 2 and k =1
+                backtrack(i+1, comb, k-1)# backtrak   2 and k =1
 
                 comb.pop()
         result = []
