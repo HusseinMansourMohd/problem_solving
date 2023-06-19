@@ -14,6 +14,8 @@ class Solution:
         if root is None:
             return []
         
+
+        
         result = []
         stack = [root]
         
