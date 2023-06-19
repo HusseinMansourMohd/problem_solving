@@ -12,6 +12,8 @@
 # 2. 2 steps
 # Example 2:
 
+
+
 # Input: n = 3
 # Output: 3
 # Explanation: There are three ways to climb to the top.
