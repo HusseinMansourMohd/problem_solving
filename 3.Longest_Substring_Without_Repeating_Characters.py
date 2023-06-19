@@ -5,6 +5,8 @@ class Solution:
         seen = set()
         maxlen = 0
         ####
+
+        
         while right < len(s):
             if s[right] not in seen:
                 seen.add(s[right])
