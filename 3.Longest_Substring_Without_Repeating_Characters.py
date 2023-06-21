@@ -8,6 +8,8 @@ class Solution:
 
         
         while right < len(s):
+
+            
             if s[right] not in seen:
                 seen.add(s[right])
                 maxlen = max(maxlen,len(seen))
