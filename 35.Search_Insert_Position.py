@@ -8,6 +8,8 @@ class Solution:
             mid = (right + left) // 2
             if (target == nums[mid]):
                 return mid
+
+                
             
 
             if (target < nums[mid]):
