@@ -9,7 +9,6 @@ class Solution:
             if (target == nums[mid]):
                 return mid
 
-                
             
 
             if (target < nums[mid]):
