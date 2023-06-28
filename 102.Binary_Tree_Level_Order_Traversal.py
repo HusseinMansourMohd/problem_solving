@@ -7,7 +7,6 @@ class Node:
 
         
 """
-#####
 
 class Solution:
     def preorder(self, root: 'Node') -> List[int]:
